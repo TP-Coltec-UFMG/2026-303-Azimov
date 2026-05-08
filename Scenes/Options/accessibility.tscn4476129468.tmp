@@ -1,0 +1,305 @@
+[gd_scene format=3 uid="uid://ddvcxmdowtte0"]
+
+[ext_resource type="Script" uid="uid://dfb1mn72mybfl" path="res://Scripts/Menu/accessibility.gd" id="1_hd0kn"]
+[ext_resource type="Texture2D" uid="uid://3v65ns525vg8" path="res://Sprites/transitions/Transition.png" id="2_25yde"]
+[ext_resource type="FontFile" uid="uid://b7by8iiefmx8l" path="res://fonts/PixelifySans-Bold.ttf" id="2_tf14j"]
+[ext_resource type="FontFile" uid="uid://e6o7s3fomjpp" path="res://fonts/PixelifySans-SemiBold.ttf" id="3_qvhid"]
+[ext_resource type="Script" uid="uid://dnofvqmf0ukq5" path="res://shaders/Controle_daltonismo.gd" id="3_rcnbs"]
+[ext_resource type="Texture2D" uid="uid://b4ycsa3gv06xx" path="res://Sprites/background/OptionBackground.png" id="3_tgxgs"]
+[ext_resource type="Script" uid="uid://ds3e58qhmtuxo" path="res://shaders/option_daltonismo_button.gd" id="4_rcnbs"]
+[ext_resource type="PackedScene" uid="uid://ci8v2nive2ur5" path="res://Scenes/Objects/animated_button.tscn" id="4_tgxgs"]
+[ext_resource type="FontFile" uid="uid://d304ktd4yfv1v" path="res://fonts/PixelifySans-Regular.ttf" id="5_qs16f"]
+[ext_resource type="Texture2D" uid="uid://begd1l5bv4bdb" path="res://Sprites/ui/sprite_05.png" id="6_mt8j3"]
+[ext_resource type="Script" uid="uid://icm7gtd4sph1" path="res://shaders/intensidade.gd" id="8_ldmw4"]
+[ext_resource type="Script" uid="uid://db1ye3fa34wpj" path="res://Scenes/Options/legandas.gd" id="9_0mi2l"]
+[ext_resource type="Texture2D" uid="uid://be4bcow3802oh" path="res://Sprites/ui/sprite_08.png" id="9_mt8j3"]
+[ext_resource type="Texture2D" uid="uid://c4pourkcjr14a" path="res://Sprites/New Piskel(11).png" id="10_21ojm"]
+[ext_resource type="FontFile" uid="uid://4u0s2rx02af5" path="res://fonts/PixelifySans-Medium.ttf" id="10_dx7hr"]
+[ext_resource type="Script" uid="uid://hb0bwfabcl8r" path="res://Scenes/Options/control.gd" id="10_otjr7"]
+[ext_resource type="PackedScene" uid="uid://b25tlu8urnkux" path="res://Scenes/Objects/filtro_daltonismo.tscn" id="11_qs16f"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_25yde"]
+atlas = ExtResource("2_25yde")
+region = Rect2(0, 0, 384, 216)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eji0e"]
+atlas = ExtResource("2_25yde")
+region = Rect2(384, 0, 384, 216)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tgxgs"]
+atlas = ExtResource("2_25yde")
+region = Rect2(768, 0, 384, 216)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tf14j"]
+atlas = ExtResource("2_25yde")
+region = Rect2(1152, 0, 384, 216)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fmigq"]
+atlas = ExtResource("2_25yde")
+region = Rect2(1536, 0, 384, 216)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sh4mf"]
+atlas = ExtResource("2_25yde")
+region = Rect2(1920, 0, 384, 216)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sv2ii"]
+atlas = ExtResource("2_25yde")
+region = Rect2(2304, 0, 384, 216)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nn0om"]
+atlas = ExtResource("2_25yde")
+region = Rect2(2688, 0, 384, 216)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_eji0e"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_25yde")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eji0e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tgxgs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tf14j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fmigq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sh4mf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sv2ii")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nn0om")
+}],
+"loop": false,
+"name": &"default",
+"speed": 30.0
+}]
+
+[sub_resource type="QuadMesh" id="QuadMesh_tgxgs"]
+
+[node name="Accessibility" type="Node2D" unique_id=1863827344]
+script = ExtResource("1_hd0kn")
+
+[node name="Logo" type="Node" parent="." unique_id=1311820740]
+
+[node name="Label" type="Label" parent="Logo" unique_id=294837672]
+anchors_preset = -1
+anchor_left = -0.15416667
+anchor_top = -0.014814815
+anchor_right = 0.1875
+anchor_bottom = -0.014814815
+offset_left = 74.0
+offset_top = 11.0
+offset_right = 390.0
+offset_bottom = 60.0
+pivot_offset = Vector2(72, 24)
+theme_override_fonts/font = ExtResource("2_tf14j")
+theme_override_font_sizes/font_size = 40
+text = "ACESSIBILIDADE"
+horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Options" type="Node" parent="." unique_id=415918426]
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Options" unique_id=1384590856]
+z_index = 1
+offset_left = 120.0
+offset_top = 83.0
+offset_right = 341.0
+offset_bottom = 138.0
+theme_override_constants/separation = 18
+script = ExtResource("3_rcnbs")
+
+[node name="OptionDaltonismoButton" type="OptionButton" parent="Options/VBoxContainer" unique_id=1149141263]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_qvhid")
+theme_override_font_sizes/font_size = 10
+selected = 0
+item_count = 4
+popup/item_0/text = "Desligado"
+popup/item_0/id = 0
+popup/item_1/text = "Auxílio Protanopia"
+popup/item_1/id = 1
+popup/item_2/text = "Auxílio Deuteranopia"
+popup/item_2/id = 2
+popup/item_3/text = "Auxílio Tritanopia"
+popup/item_3/id = 3
+script = ExtResource("4_rcnbs")
+pixel_font = ExtResource("5_qs16f")
+pixel_font_size = 8
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="Options/VBoxContainer/OptionDaltonismoButton" unique_id=341723286]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.07112971
+anchor_top = 0.05
+anchor_right = -0.07112971
+anchor_bottom = 0.05
+offset_left = 17.0
+offset_top = -17.0
+offset_right = 80.0
+offset_bottom = 6.0
+theme_override_fonts/font = ExtResource("5_qs16f")
+theme_override_font_sizes/font_size = 12
+text = "Filtro de daltonismo"
+metadata/_edit_use_anchors_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Options/VBoxContainer/OptionDaltonismoButton" unique_id=1998082914]
+position = Vector2(-15, 4)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("6_mt8j3")
+
+[node name="Intensidade" type="HSlider" parent="Options/VBoxContainer" unique_id=79041385]
+layout_mode = 2
+max_value = 1.0
+step = 0.01
+script = ExtResource("8_ldmw4")
+
+[node name="Label" type="Label" parent="Options/VBoxContainer/Intensidade" unique_id=1251013475]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.06561086
+anchor_top = 1.7343748
+anchor_right = -0.06561086
+anchor_bottom = 1.7343748
+offset_left = 17.0
+offset_top = -41.749996
+offset_right = 134.0
+offset_bottom = -18.749996
+theme_override_fonts/font = ExtResource("5_qs16f")
+theme_override_font_sizes/font_size = 12
+text = "Intensidade"
+metadata/_edit_use_anchors_ = true
+
+[node name="Legandas" type="CheckBox" parent="Options/VBoxContainer" unique_id=1174431280]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("5_qs16f")
+theme_override_font_sizes/font_size = 13
+text = "Legendas"
+flat = true
+script = ExtResource("9_0mi2l")
+
+[node name="SpinBox" type="SpinBox" parent="Options/VBoxContainer/Legandas" unique_id=124055614]
+visible = false
+layout_mode = 0
+offset_left = 56.0
+offset_top = 24.0
+offset_right = 142.5
+offset_bottom = 55.0
+scale = Vector2(0.7, 0.7)
+min_value = 8.0
+max_value = 16.0
+value = 10.0
+suffix = "px"
+
+[node name="Label" type="Label" parent="Options/VBoxContainer/Legandas/SpinBox" unique_id=1121423891]
+layout_mode = 0
+offset_left = -72.85713
+offset_top = -3.0517578e-05
+offset_right = -3.857132
+offset_bottom = 28.57138
+theme_override_fonts/font = ExtResource("5_qs16f")
+text = "Tamanho"
+vertical_alignment = 1
+
+[node name="Control" type="Control" parent="Options/VBoxContainer/Legandas" unique_id=2072446097]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("10_otjr7")
+
+[node name="MeshInstance2D" type="Sprite2D" parent="Options/VBoxContainer/Legandas/Control" unique_id=1833887889]
+modulate = Color(0, 0, 0, 0.5529412)
+position = Vector2(192, 44)
+scale = Vector2(7.2968764, 7.3750005)
+texture = ExtResource("10_21ojm")
+
+[node name="Label" type="Label" parent="Options/VBoxContainer/Legandas/Control" unique_id=675232699]
+layout_mode = 0
+offset_left = 128.0
+offset_top = 35.0
+offset_right = 271.0
+offset_bottom = 66.0
+theme_override_fonts/font = ExtResource("10_dx7hr")
+text = "px"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PreviewSubtitlles" type="Label" parent="Options/VBoxContainer/Legandas/Control" unique_id=2120307935]
+layout_mode = 0
+offset_left = 128.0
+offset_top = 4.0
+offset_right = 271.0
+offset_bottom = 35.0
+theme_override_fonts/font = ExtResource("5_qs16f")
+theme_override_font_sizes/font_size = 16
+text = "10 Minutos..."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BackToMenuButton" parent="Options" unique_id=464511439 node_paths=PackedStringArray("transition") instance=ExtResource("4_tgxgs")]
+offset_left = 447.0
+offset_top = 2.0
+offset_right = 478.0
+offset_bottom = 33.0
+theme_override_constants/icon_max_width = 23
+theme_override_icons/icon = ExtResource("9_mt8j3")
+icon = ExtResource("9_mt8j3")
+transition = NodePath("../../Input_transition_acessibility")
+scene_to_change_path = "uid://blnaweio5sp0r"
+hover_scale = Vector2(1.1, 1.1)
+hover_animation_length = 0.1
+un_hover_animation_length = 0.1
+press_scale = Vector2(0.95, 0.95)
+press_animation_length_1 = 0.1
+press_animation_length_2 = 0.1
+
+[node name="Input_transition_acessibility" type="AnimatedSprite2D" parent="." unique_id=1499372645]
+visible = false
+z_index = 1
+position = Vector2(239.99722, 134.99672)
+rotation = 1.5707964
+scale = Vector2(0.70309424, 2.2221239)
+sprite_frames = SubResource("SpriteFrames_eji0e")
+metadata/_edit_lock_ = true
+
+[node name="Input_transition" type="AnimatedSprite2D" parent="." unique_id=1842848767]
+visible = false
+z_index = 1
+position = Vector2(239.99722, 134.99672)
+rotation = 1.5707964
+scale = Vector2(0.70309424, 2.2221239)
+sprite_frames = SubResource("SpriteFrames_eji0e")
+metadata/_edit_lock_ = true
+
+[node name="Background" type="Sprite2D" parent="." unique_id=763705770]
+position = Vector2(240.00002, 135)
+scale = Vector2(1, 0.99999994)
+texture = ExtResource("3_tgxgs")
+metadata/_edit_lock_ = true
+
+[node name="FILTRO ESCURO TESTE" type="MeshInstance2D" parent="." unique_id=542442998]
+modulate = Color(0, 0, 0, 0)
+z_index = 4
+position = Vector2(239.5, 134.5)
+scale = Vector2(479, 269)
+mesh = SubResource("QuadMesh_tgxgs")
+metadata/_edit_lock_ = true
+
+[node name="FiltroDaltonismo" parent="." unique_id=1713150449 instance=ExtResource("11_qs16f")]
+
+[connection signal="item_selected" from="Options/VBoxContainer/OptionDaltonismoButton" to="Options/VBoxContainer" method="_on_option_daltonismo_button_item_selected"]
+[connection signal="value_changed" from="Options/VBoxContainer/Intensidade" to="Options/VBoxContainer" method="_on_intensidade_value_changed"]
+[connection signal="toggled" from="Options/VBoxContainer/Legandas" to="Options/VBoxContainer/Legandas" method="_on_toggled"]

@@ -4,6 +4,7 @@ Grupo: Henrique Aredes, Lucas Santana, João Leonardo Matheus Ramalho, Gabriel O
  Nome do jogo: Aura Code
 
 CONCEITO
+
 Você vive em um mundo onde os humanos foram praticamente substituídos por uma Inteligência Artificial Suprema.
 Tudo funciona de forma perfeita: qualquer necessidade pode ser resolvida com um simples prompt. As pessoas vivem em paz, sem conflitos, sem escassez e sem preocupações.
 Entretanto, o CEO da empresa responsável por essa I.A. decide fazer um prompt extremo: acabar com todos os problemas da humanidade.

@@ -1,0 +1,221 @@
+[gd_scene format=3 uid="uid://d0l3tylmjphay"]
+
+[ext_resource type="Script" uid="uid://djc3uuro1fytc" path="res://Scripts/Menu/primeira_vez.gd" id="1_5fqja"]
+[ext_resource type="Shader" uid="uid://eth68kkqm6mj" path="res://shaders/blur.gdshader" id="2_7xrfs"]
+[ext_resource type="FontFile" uid="uid://b7by8iiefmx8l" path="res://fonts/PixelifySans-Bold.ttf" id="3_y487q"]
+[ext_resource type="Texture2D" uid="uid://byp7lf7i0kq0i" path="res://Sprites/ui/Labels/New Piskel(14).png" id="4_v5yng"]
+[ext_resource type="FontFile" uid="uid://d304ktd4yfv1v" path="res://fonts/PixelifySans-Regular.ttf" id="5_yp2wk"]
+[ext_resource type="Script" uid="uid://i1rviwbqavlf" path="res://Scripts/Acessibility/leitor_de_tela_primeira_vez.gd" id="6_5fqja"]
+[ext_resource type="Texture2D" uid="uid://dfuffgnqyexh0" path="res://Sprites/ui/Nodes/New Piskel(19).png" id="6_y487q"]
+[ext_resource type="FontFile" uid="uid://e6o7s3fomjpp" path="res://fonts/PixelifySans-SemiBold.ttf" id="7_cjebl"]
+[ext_resource type="Texture2D" uid="uid://le863dyokcah" path="res://Sprites/ui/Nodes/New Piskel(18).png" id="7_v5yng"]
+[ext_resource type="Script" uid="uid://4owk1gtkwir6" path="res://Scripts/Objects/OptionButton/option_language_button.gd" id="8_55pjp"]
+[ext_resource type="PackedScene" uid="uid://ci8v2nive2ur5" path="res://Scenes/Objects/animated_button.tscn" id="9_0v7nq"]
+[ext_resource type="Texture2D" uid="uid://be4bcow3802oh" path="res://Sprites/ui/Icons/sprite_08.png" id="10_eaqbp"]
+[ext_resource type="Script" uid="uid://jeuutu35dtsf" path="res://Scripts/Objects/Button/BackAndSaveMenuOptions.gd" id="11_qpiec"]
+[ext_resource type="Texture2D" uid="uid://3v65ns525vg8" path="res://Sprites/transitions/Transition.png" id="12_f431u"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_dmrql"]
+shader = ExtResource("2_7xrfs")
+shader_parameter/blur_amount = 1.5
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_25yde"]
+atlas = ExtResource("12_f431u")
+region = Rect2(0, 0, 384, 216)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eji0e"]
+atlas = ExtResource("12_f431u")
+region = Rect2(384, 0, 384, 216)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tgxgs"]
+atlas = ExtResource("12_f431u")
+region = Rect2(768, 0, 384, 216)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tf14j"]
+atlas = ExtResource("12_f431u")
+region = Rect2(1152, 0, 384, 216)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fmigq"]
+atlas = ExtResource("12_f431u")
+region = Rect2(1536, 0, 384, 216)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sh4mf"]
+atlas = ExtResource("12_f431u")
+region = Rect2(1920, 0, 384, 216)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sv2ii"]
+atlas = ExtResource("12_f431u")
+region = Rect2(2304, 0, 384, 216)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nn0om"]
+atlas = ExtResource("12_f431u")
+region = Rect2(2688, 0, 384, 216)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_o3maq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_25yde")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eji0e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tgxgs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tf14j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fmigq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sh4mf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sv2ii")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nn0om")
+}],
+"loop": false,
+"name": &"default",
+"speed": 30.0
+}]
+
+[node name="PrimeiraVez" type="Node2D" unique_id=32790835]
+script = ExtResource("1_5fqja")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1002074400]
+material = SubResource("ShaderMaterial_dmrql")
+offset_right = 482.0
+offset_bottom = 270.0
+color = Color(0, 0, 0, 1)
+
+[node name="Label" type="Label" parent="." unique_id=523651046]
+z_index = 1
+offset_left = 118.0
+offset_top = 78.0
+offset_right = 378.0
+offset_bottom = 101.0
+theme_override_fonts/font = ExtResource("3_y487q")
+theme_override_font_sizes/font_size = 20
+text = "Bem Vindo"
+horizontal_alignment = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=218166353]
+position = Vector2(253, 125)
+scale = Vector2(10.41211, 9.40625)
+texture = ExtResource("4_v5yng")
+
+[node name="LeitorDeTela" type="CheckBox" parent="." unique_id=1728682958]
+offset_left = 190.0
+offset_top = 103.0
+offset_right = 305.0
+offset_bottom = 127.0
+theme_override_constants/h_separation = 7
+theme_override_fonts/font = ExtResource("5_yp2wk")
+theme_override_font_sizes/font_size = 13
+theme_override_icons/checked = ExtResource("6_y487q")
+theme_override_icons/unchecked = ExtResource("7_v5yng")
+text = "Leitor de Tela"
+flat = true
+icon_alignment = 2
+script = ExtResource("6_5fqja")
+
+[node name="Velocidade" type="SpinBox" parent="LeitorDeTela" unique_id=1980974152]
+visible = false
+layout_mode = 0
+offset_left = 56.0
+offset_top = 19.0
+offset_right = 142.5
+offset_bottom = 50.0
+scale = Vector2(0.7, 0.7)
+min_value = 0.5
+max_value = 3.0
+step = 0.5
+value = 1.0
+suffix = "x"
+
+[node name="Label" type="Label" parent="LeitorDeTela/Velocidade" unique_id=1740012334]
+layout_mode = 0
+offset_left = -87.14285
+offset_right = -5.142853
+offset_bottom = 28.571402
+theme_override_fonts/font = ExtResource("5_yp2wk")
+text = "Velocidade"
+vertical_alignment = 1
+
+[node name="OptionLanguageButton" type="OptionButton" parent="." unique_id=1888961834]
+offset_left = 206.0
+offset_top = 161.0
+offset_right = 292.0
+offset_bottom = 182.0
+theme_override_fonts/font = ExtResource("7_cjebl")
+theme_override_font_sizes/font_size = 10
+selected = 0
+item_count = 4
+popup/item_0/text = "PORTUGUÊS"
+popup/item_0/id = 0
+popup/item_1/text = "ENGLISH"
+popup/item_1/id = 1
+popup/item_2/text = "ESPAÑOL"
+popup/item_2/id = 2
+popup/item_3/text = "FRANÇAIS"
+popup/item_3/id = 3
+script = ExtResource("8_55pjp")
+pixel_font = ExtResource("5_yp2wk")
+pixel_font_size = 8
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="OptionLanguageButton" unique_id=1726408728]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.19767442
+anchor_top = -0.095238276
+anchor_right = -0.19767442
+anchor_bottom = -0.095238276
+offset_left = 17.0
+offset_top = -17.0
+offset_right = 80.0
+offset_bottom = 6.0
+theme_override_fonts/font = ExtResource("5_yp2wk")
+theme_override_font_sizes/font_size = 12
+text = "Idioma"
+metadata/_edit_use_anchors_ = true
+
+[node name="BackToMenuButton" parent="." unique_id=464511439 node_paths=PackedStringArray("transition") instance=ExtResource("9_0v7nq")]
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = 351.0
+offset_top = 80.0
+offset_right = 376.0
+offset_bottom = 105.0
+grow_horizontal = 0
+pivot_offset = Vector2(13, 13)
+theme_override_constants/icon_max_width = 23
+theme_override_icons/icon = ExtResource("10_eaqbp")
+icon = ExtResource("10_eaqbp")
+script = ExtResource("11_qpiec")
+transition = NodePath("../Input_transition")
+scene_to_change_path = "uid://cyt75dhhu275m"
+
+[node name="Input_transition" type="AnimatedSprite2D" parent="." unique_id=1937325648]
+visible = false
+z_index = 1
+position = Vector2(239.99722, 134.99672)
+rotation = 1.5707964
+scale = Vector2(0.70309424, 2.2221239)
+sprite_frames = SubResource("SpriteFrames_o3maq")
+metadata/_edit_lock_ = true
+
+[connection signal="mouse_entered" from="LeitorDeTela" to="." method="_on_leitor_de_tela_mouse_entered"]
+[connection signal="toggled" from="LeitorDeTela" to="LeitorDeTela" method="_on_toggled"]
+[connection signal="mouse_entered" from="LeitorDeTela/Velocidade" to="LeitorDeTela" method="_on_velocidade_mouse_entered"]
+[connection signal="value_changed" from="LeitorDeTela/Velocidade" to="LeitorDeTela" method="_on_velocidade_value_changed"]
+[connection signal="item_selected" from="OptionLanguageButton" to="OptionLanguageButton" method="_on_item_selected"]
+[connection signal="mouse_entered" from="OptionLanguageButton" to="." method="_on_option_language_button_mouse_entered"]
+[connection signal="mouse_entered" from="BackToMenuButton" to="." method="_on_back_to_menu_button_mouse_entered"]

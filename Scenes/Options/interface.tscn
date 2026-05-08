@@ -1,0 +1,242 @@
+[gd_scene format=3 uid="uid://cm6fut3qxhj6f"]
+
+[ext_resource type="Script" uid="uid://bvfrb36ueftgd" path="res://Scripts/Menu/interface.gd" id="1_5hkd7"]
+[ext_resource type="FontFile" uid="uid://b7by8iiefmx8l" path="res://fonts/PixelifySans-Bold.ttf" id="2_yfupf"]
+[ext_resource type="Texture2D" uid="uid://3v65ns525vg8" path="res://Sprites/transitions/Transition.png" id="3_usgsv"]
+[ext_resource type="Texture2D" uid="uid://b4ycsa3gv06xx" path="res://Sprites/background/OptionBackground.png" id="4_1l3qh"]
+[ext_resource type="Texture2D" uid="uid://be4bcow3802oh" path="res://Sprites/ui/Icons/sprite_08.png" id="4_yfupf"]
+[ext_resource type="FontFile" uid="uid://d304ktd4yfv1v" path="res://fonts/PixelifySans-Regular.ttf" id="5_1l3qh"]
+[ext_resource type="PackedScene" uid="uid://ci8v2nive2ur5" path="res://Scenes/Objects/animated_button.tscn" id="5_k6srl"]
+[ext_resource type="Texture2D" uid="uid://le863dyokcah" path="res://Sprites/ui/Nodes/New Piskel(18).png" id="6_frsk4"]
+[ext_resource type="Script" uid="uid://bieg178qr1jvh" path="res://Scripts/Objects/CheckBox/tela_cheia_button.gd" id="6_k6srl"]
+[ext_resource type="FontFile" uid="uid://e6o7s3fomjpp" path="res://fonts/PixelifySans-SemiBold.ttf" id="7_622vi"]
+[ext_resource type="Texture2D" uid="uid://xaehmu5grhap" path="res://Sprites/ui/Icons/sprite_10.png" id="7_1115y"]
+[ext_resource type="Script" uid="uid://dx5q3ta47wlkc" path="res://Scripts/Objects/CheckBox/mostrar_fps.gd" id="7_hp4hf"]
+[ext_resource type="Script" uid="uid://db23hbr8jngdd" path="res://Scripts/Objects/OptionButton/options_frame_rate.gd" id="8_622vi"]
+[ext_resource type="Texture2D" uid="uid://dfuffgnqyexh0" path="res://Sprites/ui/Nodes/New Piskel(19).png" id="9_746so"]
+[ext_resource type="PackedScene" uid="uid://bpcrruakkh4cr" path="res://Acessibilidades/alto_contraste.tscn" id="12_6tbyl"]
+[ext_resource type="Script" uid="uid://c3o46ilruapx4" path="res://Scripts/Objects/Label/fps_label.gd" id="16_mrt04"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_25yde"]
+atlas = ExtResource("3_usgsv")
+region = Rect2(0, 0, 384, 216)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eji0e"]
+atlas = ExtResource("3_usgsv")
+region = Rect2(384, 0, 384, 216)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tgxgs"]
+atlas = ExtResource("3_usgsv")
+region = Rect2(768, 0, 384, 216)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tf14j"]
+atlas = ExtResource("3_usgsv")
+region = Rect2(1152, 0, 384, 216)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fmigq"]
+atlas = ExtResource("3_usgsv")
+region = Rect2(1536, 0, 384, 216)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sh4mf"]
+atlas = ExtResource("3_usgsv")
+region = Rect2(1920, 0, 384, 216)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sv2ii"]
+atlas = ExtResource("3_usgsv")
+region = Rect2(2304, 0, 384, 216)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nn0om"]
+atlas = ExtResource("3_usgsv")
+region = Rect2(2688, 0, 384, 216)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_eji0e"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_25yde")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eji0e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tgxgs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tf14j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fmigq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sh4mf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sv2ii")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nn0om")
+}],
+"loop": false,
+"name": &"default",
+"speed": 30.0
+}]
+
+[node name="Interface" type="Node2D" unique_id=1863827344]
+script = ExtResource("1_5hkd7")
+
+[node name="Logo" type="Node" parent="." unique_id=1311820740]
+
+[node name="Label" type="Label" parent="Logo" unique_id=294837672]
+anchors_preset = -1
+anchor_left = -0.15416667
+anchor_top = -0.014814815
+anchor_right = 0.1875
+anchor_bottom = -0.014814815
+offset_left = 74.0
+offset_top = 11.0
+offset_right = 390.0
+offset_bottom = 60.0
+pivot_offset = Vector2(72, 24)
+theme_override_fonts/font = ExtResource("2_yfupf")
+theme_override_font_sizes/font_size = 40
+text = "INTERFACE"
+horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Opcoes" type="Node" parent="." unique_id=1607594190]
+
+[node name="BackToMenuButton" parent="Opcoes" unique_id=464511439 node_paths=PackedStringArray("transition") instance=ExtResource("5_k6srl")]
+anchor_left = 1.0125
+anchor_right = 1.0
+anchor_bottom = -0.022222223
+offset_left = -35.00003
+offset_top = 4.0
+offset_right = -4.0
+offset_bottom = 35.0
+grow_horizontal = 0
+pivot_offset = Vector2(13, 13)
+theme_override_constants/icon_max_width = 23
+theme_override_icons/icon = ExtResource("4_yfupf")
+icon = ExtResource("4_yfupf")
+transition = NodePath("../../Input_transition_acessibility")
+scene_to_change_path = "uid://blnaweio5sp0r"
+metadata/_edit_use_anchors_ = true
+
+[node name="TelaCheia" type="CheckBox" parent="Opcoes" unique_id=148363256]
+offset_left = 119.0
+offset_top = 66.0
+offset_right = 358.0
+offset_bottom = 90.0
+theme_override_constants/h_separation = 7
+theme_override_fonts/font = ExtResource("5_1l3qh")
+theme_override_font_sizes/font_size = 13
+theme_override_icons/checked = ExtResource("9_746so")
+theme_override_icons/unchecked = ExtResource("6_frsk4")
+text = "Tela Cheia"
+flat = true
+script = ExtResource("6_k6srl")
+metadata/_edit_use_anchors_ = true
+
+[node name="Sprite18" type="Sprite2D" parent="Opcoes/TelaCheia" unique_id=1497351401]
+position = Vector2(-21, 23)
+texture = ExtResource("7_1115y")
+
+[node name="MostrarFps" type="CheckBox" parent="Opcoes" unique_id=1205473490]
+offset_left = 119.0
+offset_top = 87.0
+offset_right = 358.0
+offset_bottom = 111.0
+theme_override_constants/h_separation = 7
+theme_override_fonts/font = ExtResource("5_1l3qh")
+theme_override_font_sizes/font_size = 13
+theme_override_icons/checked = ExtResource("9_746so")
+theme_override_icons/unchecked = ExtResource("6_frsk4")
+text = "Mostrar FPS"
+flat = true
+script = ExtResource("7_hp4hf")
+
+[node name="OptionsFrameRate" type="OptionButton" parent="Opcoes" unique_id=1987265582]
+offset_left = 136.0
+offset_top = 128.0
+offset_right = 270.0
+offset_bottom = 149.0
+theme_override_fonts/font = ExtResource("7_622vi")
+theme_override_font_sizes/font_size = 10
+item_count = 4
+popup/item_0/text = "30 FPS"
+popup/item_0/id = 30
+popup/item_1/text = "60 FPS"
+popup/item_1/id = 60
+popup/item_2/text = "120 FPS"
+popup/item_2/id = 120
+popup/item_3/text = "Ilimitado"
+popup/item_3/id = 0
+script = ExtResource("8_622vi")
+pixel_font = ExtResource("5_1l3qh")
+pixel_font_size = 8
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="Opcoes/OptionsFrameRate" unique_id=1171772738]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.07112971
+anchor_top = 0.05
+anchor_right = -0.07112971
+anchor_bottom = 0.05
+offset_left = 17.0
+offset_top = -17.0
+offset_right = 80.0
+offset_bottom = 6.0
+theme_override_fonts/font = ExtResource("5_1l3qh")
+theme_override_font_sizes/font_size = 12
+text = "Limite de FPS"
+metadata/_edit_use_anchors_ = true
+
+[node name="Input_transition_acessibility" type="AnimatedSprite2D" parent="." unique_id=1499372645]
+visible = false
+z_index = 1
+position = Vector2(239.99722, 134.99672)
+rotation = 1.5707964
+scale = Vector2(0.70309424, 2.2221239)
+sprite_frames = SubResource("SpriteFrames_eji0e")
+metadata/_edit_lock_ = true
+
+[node name="Input_transition" type="AnimatedSprite2D" parent="." unique_id=1842848767]
+visible = false
+z_index = 1
+position = Vector2(239.99722, 134.99672)
+rotation = 1.5707964
+scale = Vector2(0.70309424, 2.2221239)
+sprite_frames = SubResource("SpriteFrames_eji0e")
+metadata/_edit_lock_ = true
+
+[node name="Background" type="Sprite2D" parent="." unique_id=763705770]
+position = Vector2(240.00002, 135)
+scale = Vector2(1, 0.99999994)
+texture = ExtResource("4_1l3qh")
+metadata/_edit_lock_ = true
+
+[node name="ALTO_CONTRASTE" parent="." unique_id=907147133 instance=ExtResource("12_6tbyl")]
+visible = false
+position = Vector2(220, 122)
+
+[node name="FPSLabel" type="Label" parent="." unique_id=1592319509]
+visible = false
+offset_right = 15.0
+offset_bottom = 12.0
+theme_override_fonts/font = ExtResource("5_1l3qh")
+theme_override_font_sizes/font_size = 9
+text = "123 FPS"
+script = ExtResource("16_mrt04")
+
+[connection signal="mouse_entered" from="Opcoes/BackToMenuButton" to="." method="_on_back_to_menu_button_mouse_entered"]
+[connection signal="mouse_entered" from="Opcoes/TelaCheia" to="." method="_on_tela_cheia_mouse_entered"]
+[connection signal="toggled" from="Opcoes/TelaCheia" to="." method="_on_tela_cheia_toggled"]
+[connection signal="mouse_entered" from="Opcoes/MostrarFps" to="." method="_on_mostrar_fps_mouse_entered"]
+[connection signal="toggled" from="Opcoes/MostrarFps" to="." method="_on_mostrar_fps_toggled"]
+[connection signal="item_focused" from="Opcoes/OptionsFrameRate" to="." method="_on_options_frame_rate_item_focused"]
+[connection signal="item_selected" from="Opcoes/OptionsFrameRate" to="." method="_on_options_frame_rate_item_selected"]
+[connection signal="mouse_entered" from="Opcoes/OptionsFrameRate" to="." method="_on_options_frame_rate_mouse_entered"]

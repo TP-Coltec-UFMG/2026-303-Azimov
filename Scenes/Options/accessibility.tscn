@@ -1,0 +1,404 @@
+[gd_scene format=3 uid="uid://ddvcxmdowtte0"]
+
+[ext_resource type="Script" uid="uid://bsnxac4yrm78u" path="res://Scripts/Menu/accessibility.gd" id="1_vkj6a"]
+[ext_resource type="Texture2D" uid="uid://3v65ns525vg8" path="res://Sprites/transitions/Transition.png" id="2_25yde"]
+[ext_resource type="FontFile" uid="uid://b7by8iiefmx8l" path="res://fonts/PixelifySans-Bold.ttf" id="2_tf14j"]
+[ext_resource type="FontFile" uid="uid://e6o7s3fomjpp" path="res://fonts/PixelifySans-SemiBold.ttf" id="3_qvhid"]
+[ext_resource type="Script" uid="uid://dnofvqmf0ukq5" path="res://Scripts/Acessibility/Controle_daltonismo.gd" id="3_rcnbs"]
+[ext_resource type="Texture2D" uid="uid://b4ycsa3gv06xx" path="res://Sprites/background/OptionBackground.png" id="3_tgxgs"]
+[ext_resource type="Script" uid="uid://ds3e58qhmtuxo" path="res://Scripts/Objects/OptionButton/option_daltonismo_button.gd" id="4_rcnbs"]
+[ext_resource type="PackedScene" uid="uid://ci8v2nive2ur5" path="res://Scenes/Objects/animated_button.tscn" id="4_tgxgs"]
+[ext_resource type="FontFile" uid="uid://d304ktd4yfv1v" path="res://fonts/PixelifySans-Regular.ttf" id="5_qs16f"]
+[ext_resource type="Texture2D" uid="uid://d3d1hkeb2lfca" path="res://Sprites/ui/Nodes/sprite_6.png" id="7_ubhvj"]
+[ext_resource type="StyleBox" uid="uid://cfg3yi6v77uwd" path="res://Material/style_slider_black.tres" id="8_12mct"]
+[ext_resource type="Script" uid="uid://d2lhurtsmqmha" path="res://Scripts/Acessibility/legendas.gd" id="8_dx7hr"]
+[ext_resource type="Script" uid="uid://icm7gtd4sph1" path="res://Scripts/Acessibility/intensidade.gd" id="8_ldmw4"]
+[ext_resource type="Script" uid="uid://foqfa63m5okv" path="res://Scripts/Acessibility/spin_box.gd" id="9_8ksoh"]
+[ext_resource type="Texture2D" uid="uid://6t8db2xg7cui" path="res://Sprites/ui/Labels/New Piskel(12).png" id="9_dx7hr"]
+[ext_resource type="StyleBox" uid="uid://dq3sdfmn5ky3w" path="res://Material/style_slider_white.tres" id="9_kmicg"]
+[ext_resource type="Texture2D" uid="uid://be4bcow3802oh" path="res://Sprites/ui/Icons/sprite_08.png" id="9_mt8j3"]
+[ext_resource type="FontFile" uid="uid://4u0s2rx02af5" path="res://fonts/PixelifySans-Medium.ttf" id="10_dx7hr"]
+[ext_resource type="Texture2D" uid="uid://dfuffgnqyexh0" path="res://Sprites/ui/Nodes/New Piskel(19).png" id="10_xxa1p"]
+[ext_resource type="Script" uid="uid://cjjk3fkuntc6w" path="res://Scripts/Acessibility/leitor_de_tela.gd" id="11_21ojm"]
+[ext_resource type="PackedScene" uid="uid://b25tlu8urnkux" path="res://Scenes/Objects/filtro_daltonismo.tscn" id="11_qs16f"]
+[ext_resource type="Texture2D" uid="uid://le863dyokcah" path="res://Sprites/ui/Nodes/New Piskel(18).png" id="11_ubhvj"]
+[ext_resource type="Texture2D" uid="uid://d3a7250k7317g" path="res://Sprites/ui/Icons/sprite_15.png" id="12_0x8ae"]
+[ext_resource type="Script" uid="uid://chxf33bnldydm" path="res://Scripts/Acessibility/alto_contraste.gd" id="12_otjr7"]
+[ext_resource type="Texture2D" uid="uid://by2lixjesxdfr" path="res://Sprites/ui/Icons/sprite_14.png" id="14_v68e3"]
+[ext_resource type="Texture2D" uid="uid://6iwo13ufuuch" path="res://Sprites/ui/Icons/sprite_18.png" id="16_kd38n"]
+[ext_resource type="PackedScene" uid="uid://bpcrruakkh4cr" path="res://Acessibilidades/alto_contraste.tscn" id="19_r2t8g"]
+[ext_resource type="Script" uid="uid://c3o46ilruapx4" path="res://Scripts/Objects/Label/fps_label.gd" id="28_12mct"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_25yde"]
+atlas = ExtResource("2_25yde")
+region = Rect2(0, 0, 384, 216)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eji0e"]
+atlas = ExtResource("2_25yde")
+region = Rect2(384, 0, 384, 216)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tgxgs"]
+atlas = ExtResource("2_25yde")
+region = Rect2(768, 0, 384, 216)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tf14j"]
+atlas = ExtResource("2_25yde")
+region = Rect2(1152, 0, 384, 216)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fmigq"]
+atlas = ExtResource("2_25yde")
+region = Rect2(1536, 0, 384, 216)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sh4mf"]
+atlas = ExtResource("2_25yde")
+region = Rect2(1920, 0, 384, 216)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sv2ii"]
+atlas = ExtResource("2_25yde")
+region = Rect2(2304, 0, 384, 216)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nn0om"]
+atlas = ExtResource("2_25yde")
+region = Rect2(2688, 0, 384, 216)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_eji0e"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_25yde")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eji0e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tgxgs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tf14j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fmigq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sh4mf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sv2ii")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nn0om")
+}],
+"loop": false,
+"name": &"default",
+"speed": 30.0
+}]
+
+[node name="Accessibility" type="Node2D" unique_id=1863827344]
+script = ExtResource("1_vkj6a")
+
+[node name="Logo" type="Node" parent="." unique_id=1311820740]
+
+[node name="Label" type="Label" parent="Logo" unique_id=294837672]
+anchors_preset = -1
+anchor_left = -0.15416667
+anchor_top = -0.014814815
+anchor_right = 0.1875
+anchor_bottom = -0.014814815
+offset_left = 74.0
+offset_top = 11.0
+offset_right = 390.0
+offset_bottom = 60.0
+pivot_offset = Vector2(72, 24)
+theme_override_fonts/font = ExtResource("2_tf14j")
+theme_override_font_sizes/font_size = 40
+text = "ACESSIBILIDADE"
+horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Options" type="Node" parent="." unique_id=415918426]
+
+[node name="VContainer" type="VBoxContainer" parent="Options" unique_id=1384590856]
+offset_left = 118.0
+offset_top = 64.0
+offset_right = 329.0
+offset_bottom = 238.0
+theme_override_constants/separation = 18
+script = ExtResource("3_rcnbs")
+
+[node name="OptionDaltonismoButton" type="OptionButton" parent="Options/VContainer" unique_id=1149141263]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_qvhid")
+theme_override_font_sizes/font_size = 10
+selected = 0
+item_count = 4
+popup/item_0/text = "Desligado"
+popup/item_0/id = 0
+popup/item_1/text = "Auxílio Protanopia"
+popup/item_1/id = 1
+popup/item_2/text = "Auxílio Deuteranopia"
+popup/item_2/id = 2
+popup/item_3/text = "Auxílio Tritanopia"
+popup/item_3/id = 3
+script = ExtResource("4_rcnbs")
+pixel_font = ExtResource("5_qs16f")
+pixel_font_size = 8
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="Options/VContainer/OptionDaltonismoButton" unique_id=341723286]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.0663717
+anchor_top = -0.16666648
+anchor_right = 0.18555143
+anchor_bottom = 0.0952381
+offset_left = 17.0
+offset_top = -11.500004
+offset_right = 78.2871
+offset_bottom = 6.0
+theme_override_fonts/font = ExtResource("5_qs16f")
+theme_override_font_sizes/font_size = 12
+text = "Filtro de daltonismo"
+metadata/_edit_use_anchors_ = true
+
+[node name="IntensidadeDaltonismo" type="HSlider" parent="Options/VContainer" unique_id=79041385]
+layout_mode = 2
+theme_override_icons/grabber = ExtResource("7_ubhvj")
+theme_override_icons/grabber_highlight = ExtResource("7_ubhvj")
+theme_override_icons/grabber_disabled = ExtResource("7_ubhvj")
+theme_override_styles/slider = ExtResource("8_12mct")
+theme_override_styles/grabber_area = ExtResource("9_kmicg")
+theme_override_styles/grabber_area_highlight = ExtResource("9_kmicg")
+max_value = 1.0
+step = 0.01
+script = ExtResource("8_ldmw4")
+
+[node name="Label" type="Label" parent="Options/VContainer/IntensidadeDaltonismo" unique_id=1251013475]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.07522124
+anchor_top = 2.8611107
+anchor_right = -0.07522124
+anchor_bottom = 2.8611107
+offset_left = 17.0
+offset_top = -41.749996
+offset_right = 134.0
+offset_bottom = -18.749996
+theme_override_fonts/font = ExtResource("5_qs16f")
+theme_override_font_sizes/font_size = 12
+text = "Intensidade"
+metadata/_edit_use_anchors_ = true
+
+[node name="Legendas" type="CheckBox" parent="Options/VContainer" unique_id=1174431280]
+layout_mode = 2
+theme_override_constants/h_separation = 8
+theme_override_fonts/font = ExtResource("5_qs16f")
+theme_override_font_sizes/font_size = 13
+theme_override_icons/checked = ExtResource("10_xxa1p")
+theme_override_icons/unchecked = ExtResource("11_ubhvj")
+text = "Legendas"
+flat = true
+script = ExtResource("8_dx7hr")
+
+[node name="Tamanho" type="SpinBox" parent="Options/VContainer/Legendas" unique_id=124055614]
+visible = false
+layout_mode = 0
+offset_left = 56.0
+offset_top = 22.0
+offset_right = 142.5
+offset_bottom = 53.0
+scale = Vector2(0.6, 0.6)
+min_value = 8.0
+max_value = 16.0
+value = 10.0
+suffix = "px"
+
+[node name="Label" type="Label" parent="Options/VContainer/Legendas/Tamanho" unique_id=1121423891]
+layout_mode = 0
+offset_left = -72.85713
+offset_top = -3.0517578e-05
+offset_right = -3.857132
+offset_bottom = 28.57138
+theme_override_fonts/font = ExtResource("5_qs16f")
+theme_override_font_sizes/font_size = 16
+text = "Tamanho"
+vertical_alignment = 1
+
+[node name="Back" type="Sprite2D" parent="Options/VContainer/Legendas" unique_id=1833887889]
+visible = false
+position = Vector2(180, 35.000008)
+scale = Vector2(6, 6)
+texture = ExtResource("9_dx7hr")
+
+[node name="PreviewTamanho" type="Label" parent="Options/VContainer/Legendas" unique_id=675232699]
+visible = false
+layout_mode = 0
+offset_left = 120.3125
+offset_top = 26.000008
+offset_right = 252.3125
+offset_bottom = 54.000008
+theme_override_fonts/font = ExtResource("10_dx7hr")
+theme_override_font_sizes/font_size = 13
+text = "px"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PreviewSubtitlles" type="Label" parent="Options/VContainer/Legendas" unique_id=2120307935]
+visible = false
+layout_mode = 0
+offset_left = 120.3125
+offset_top = -0.9999924
+offset_right = 252.3125
+offset_bottom = 26.000008
+theme_override_fonts/font = ExtResource("5_qs16f")
+theme_override_font_sizes/font_size = 10
+text = "10 Minutos..."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite18" type="Sprite2D" parent="Options/VContainer/Legendas" unique_id=1001763521]
+position = Vector2(-12, 12)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("12_0x8ae")
+
+[node name="SpinBox" type="SpinBox" parent="Options/VContainer/Legendas" unique_id=65692375]
+layout_mode = 0
+offset_left = 224.0
+offset_top = -34.0
+offset_right = 310.5
+offset_bottom = -3.0
+scale = Vector2(0.7, 0.7)
+max_value = 1.0
+step = 0.01
+alignment = 1
+script = ExtResource("9_8ksoh")
+
+[node name="LeitorDeTela" type="CheckBox" parent="Options/VContainer" unique_id=1977352214]
+layout_mode = 2
+theme_override_constants/h_separation = 8
+theme_override_fonts/font = ExtResource("5_qs16f")
+theme_override_font_sizes/font_size = 13
+theme_override_icons/checked = ExtResource("10_xxa1p")
+theme_override_icons/unchecked = ExtResource("11_ubhvj")
+text = "Leitor de Tela"
+flat = true
+icon_alignment = 2
+script = ExtResource("11_21ojm")
+
+[node name="Velocidade" type="SpinBox" parent="Options/VContainer/LeitorDeTela" unique_id=162051311]
+visible = false
+layout_mode = 0
+offset_left = 56.0
+offset_top = 19.0
+offset_right = 142.5
+offset_bottom = 50.0
+scale = Vector2(0.7, 0.7)
+min_value = 0.5
+max_value = 3.0
+step = 0.5
+value = 1.0
+suffix = "x"
+
+[node name="Label" type="Label" parent="Options/VContainer/LeitorDeTela/Velocidade" unique_id=1204663596]
+layout_mode = 0
+offset_left = -87.14285
+offset_right = -5.142853
+offset_bottom = 28.571402
+theme_override_fonts/font = ExtResource("5_qs16f")
+text = "Velocidade"
+vertical_alignment = 1
+
+[node name="Sprite18" type="Sprite2D" parent="Options/VContainer/LeitorDeTela" unique_id=465163554]
+position = Vector2(-12, 12)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("14_v68e3")
+
+[node name="AltoContraste" type="CheckBox" parent="Options/VContainer" unique_id=1994119951]
+layout_mode = 2
+theme_override_constants/h_separation = 8
+theme_override_fonts/font = ExtResource("5_qs16f")
+theme_override_font_sizes/font_size = 13
+theme_override_icons/checked = ExtResource("10_xxa1p")
+theme_override_icons/unchecked = ExtResource("11_ubhvj")
+text = "Alto Contraste"
+flat = true
+script = ExtResource("12_otjr7")
+
+[node name="Sprite18" type="Sprite2D" parent="Options/VContainer/AltoContraste" unique_id=1105132515]
+position = Vector2(-12, 12)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("16_kd38n")
+
+[node name="BackToMenuButton" parent="Options" unique_id=464511439 node_paths=PackedStringArray("transition") instance=ExtResource("4_tgxgs")]
+offset_left = 444.0
+offset_top = 4.0
+offset_right = 469.0
+offset_bottom = 29.0
+pivot_offset = Vector2(13, 13)
+theme_override_constants/icon_max_width = 23
+theme_override_icons/icon = ExtResource("9_mt8j3")
+icon = ExtResource("9_mt8j3")
+transition = NodePath("../../Input_transition_acessibility")
+scene_to_change_path = "uid://blnaweio5sp0r"
+
+[node name="Input_transition_acessibility" type="AnimatedSprite2D" parent="." unique_id=1499372645]
+visible = false
+z_index = 1
+position = Vector2(239.99722, 134.99672)
+rotation = 1.5707964
+scale = Vector2(0.70309424, 2.2221239)
+sprite_frames = SubResource("SpriteFrames_eji0e")
+metadata/_edit_lock_ = true
+
+[node name="Input_transition" type="AnimatedSprite2D" parent="." unique_id=1842848767]
+visible = false
+z_index = 1
+position = Vector2(239.99722, 134.99672)
+rotation = 1.5707964
+scale = Vector2(0.70309424, 2.2221239)
+sprite_frames = SubResource("SpriteFrames_eji0e")
+metadata/_edit_lock_ = true
+
+[node name="Background" type="Sprite2D" parent="." unique_id=763705770]
+position = Vector2(240.00002, 135)
+scale = Vector2(1, 0.99999994)
+texture = ExtResource("3_tgxgs")
+metadata/_edit_lock_ = true
+
+[node name="ALTO_CONTRASTE" parent="." unique_id=907147133 instance=ExtResource("19_r2t8g")]
+visible = false
+position = Vector2(239.99722, 134.99672)
+rotation = 1.5707964
+scale = Vector2(367.0152, 684.41425)
+metadata/_edit_lock_ = true
+
+[node name="FiltroDaltonismo" parent="." unique_id=1713150449 instance=ExtResource("11_qs16f")]
+
+[node name="FPSLabel" type="Label" parent="." unique_id=1459445520]
+visible = false
+offset_right = 15.0
+offset_bottom = 12.0
+theme_override_fonts/font = ExtResource("5_qs16f")
+theme_override_font_sizes/font_size = 9
+text = "123 FPS"
+script = ExtResource("28_12mct")
+
+[connection signal="item_selected" from="Options/VContainer/OptionDaltonismoButton" to="Options/VContainer" method="_on_option_daltonismo_button_item_selected"]
+[connection signal="mouse_entered" from="Options/VContainer/OptionDaltonismoButton" to="Options/VContainer" method="_on_option_daltonismo_button_mouse_entered"]
+[connection signal="mouse_entered" from="Options/VContainer/IntensidadeDaltonismo" to="Options/VContainer" method="_on_intensidade_mouse_entered"]
+[connection signal="value_changed" from="Options/VContainer/IntensidadeDaltonismo" to="Options/VContainer" method="_on_intensidade_value_changed"]
+[connection signal="value_changed" from="Options/VContainer/IntensidadeDaltonismo" to="Options/VContainer/Legendas/SpinBox" method="_on_intensidade_value_changed"]
+[connection signal="mouse_entered" from="Options/VContainer/Legendas" to="Options/VContainer" method="_on_legendas_mouse_entered"]
+[connection signal="toggled" from="Options/VContainer/Legendas" to="Options/VContainer/Legendas" method="_on_toggled"]
+[connection signal="mouse_entered" from="Options/VContainer/Legendas/Tamanho" to="Options/VContainer" method="_on_tamanho_mouse_entered"]
+[connection signal="value_changed" from="Options/VContainer/Legendas/Tamanho" to="Options/VContainer/Legendas" method="_on_tamanho_value_changed"]
+[connection signal="value_changed" from="Options/VContainer/Legendas/SpinBox" to="Options/VContainer/IntensidadeDaltonismo" method="_on_spin_box_value_changed"]
+[connection signal="mouse_entered" from="Options/VContainer/LeitorDeTela" to="Options/VContainer" method="_on_leitor_de_tela_mouse_entered"]
+[connection signal="toggled" from="Options/VContainer/LeitorDeTela" to="Options/VContainer/LeitorDeTela" method="_on_toggled"]
+[connection signal="mouse_entered" from="Options/VContainer/LeitorDeTela/Velocidade" to="Options/VContainer/LeitorDeTela" method="_on_velocidade_mouse_entered"]
+[connection signal="value_changed" from="Options/VContainer/LeitorDeTela/Velocidade" to="Options/VContainer/LeitorDeTela" method="_on_velocidade_value_changed"]
+[connection signal="mouse_entered" from="Options/VContainer/AltoContraste" to="Options/VContainer/AltoContraste" method="_on_mouse_entered"]
+[connection signal="toggled" from="Options/VContainer/AltoContraste" to="Options/VContainer/AltoContraste" method="_on_toggled"]
+[connection signal="mouse_entered" from="Options/BackToMenuButton" to="Options/VContainer" method="_on_back_to_menu_button_mouse_entered"]

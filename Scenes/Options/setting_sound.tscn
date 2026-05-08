@@ -1,0 +1,313 @@
+[gd_scene format=3 uid="uid://s4kr4hlgnddp"]
+
+[ext_resource type="Script" uid="uid://c5h7owoeg1nve" path="res://Scripts/Menu/setting_sound.gd" id="1_22bgs"]
+[ext_resource type="FontFile" uid="uid://b7by8iiefmx8l" path="res://fonts/PixelifySans-Bold.ttf" id="2_sa0lm"]
+[ext_resource type="PackedScene" uid="uid://cl7p75jsc212w" path="res://Scenes/Objects/volume_slider.tscn" id="3_bp7p1"]
+[ext_resource type="Texture2D" uid="uid://be4bcow3802oh" path="res://Sprites/ui/Icons/sprite_08.png" id="4_sa0lm"]
+[ext_resource type="FontFile" uid="uid://d304ktd4yfv1v" path="res://fonts/PixelifySans-Regular.ttf" id="4_vq3wj"]
+[ext_resource type="Texture2D" uid="uid://ci4kcnpm4h3u3" path="res://Sprites/ui/Icons/sprite_03.png" id="5_2t4wd"]
+[ext_resource type="Texture2D" uid="uid://fi4josxhfa76" path="res://Sprites/ui/Icons/sprite_04.png" id="6_k8sn8"]
+[ext_resource type="Script" uid="uid://c6sqqjbnso428" path="res://Scripts/Sounds/value_volume.gd" id="7_k8sn8"]
+[ext_resource type="Texture2D" uid="uid://crsq7vjjyplis" path="res://Sprites/ui/Icons/sprite_06.png" id="7_vechk"]
+[ext_resource type="Texture2D" uid="uid://3v65ns525vg8" path="res://Sprites/transitions/Transition.png" id="8_kxd3r"]
+[ext_resource type="Texture2D" uid="uid://b4ycsa3gv06xx" path="res://Sprites/background/OptionBackground.png" id="9_4ymb1"]
+[ext_resource type="Script" uid="uid://bdydc3jee0mhe" path="res://Scripts/Sounds/value_music.gd" id="10_vechk"]
+[ext_resource type="PackedScene" uid="uid://ci8v2nive2ur5" path="res://Scenes/Objects/animated_button.tscn" id="10_xooxd"]
+[ext_resource type="Script" uid="uid://dflx71jtdm4bf" path="res://Scripts/Sounds/value_ldt.gd" id="11_vechk"]
+[ext_resource type="Texture2D" uid="uid://by2lixjesxdfr" path="res://Sprites/ui/Icons/sprite_14.png" id="12_4ymb1"]
+[ext_resource type="PackedScene" uid="uid://bpcrruakkh4cr" path="res://Acessibilidades/alto_contraste.tscn" id="12_bp7p1"]
+[ext_resource type="Script" uid="uid://ev1h82fudthv" path="res://Scripts/Sounds/value_sfx.gd" id="12_kxd3r"]
+[ext_resource type="Script" uid="uid://c3o46ilruapx4" path="res://Scripts/Objects/Label/fps_label.gd" id="18_4ymb1"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_25yde"]
+atlas = ExtResource("8_kxd3r")
+region = Rect2(0, 0, 384, 216)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eji0e"]
+atlas = ExtResource("8_kxd3r")
+region = Rect2(384, 0, 384, 216)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tgxgs"]
+atlas = ExtResource("8_kxd3r")
+region = Rect2(768, 0, 384, 216)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tf14j"]
+atlas = ExtResource("8_kxd3r")
+region = Rect2(1152, 0, 384, 216)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fmigq"]
+atlas = ExtResource("8_kxd3r")
+region = Rect2(1536, 0, 384, 216)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sh4mf"]
+atlas = ExtResource("8_kxd3r")
+region = Rect2(1920, 0, 384, 216)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sv2ii"]
+atlas = ExtResource("8_kxd3r")
+region = Rect2(2304, 0, 384, 216)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nn0om"]
+atlas = ExtResource("8_kxd3r")
+region = Rect2(2688, 0, 384, 216)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_eji0e"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_25yde")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eji0e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tgxgs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tf14j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fmigq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sh4mf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sv2ii")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nn0om")
+}],
+"loop": false,
+"name": &"default",
+"speed": 30.0
+}]
+
+[node name="SettingSound" type="Node2D" unique_id=1863827344]
+script = ExtResource("1_22bgs")
+
+[node name="Logo" type="Node" parent="." unique_id=1311820740]
+
+[node name="Label" type="Label" parent="Logo" unique_id=294837672]
+anchors_preset = -1
+anchor_left = -0.15416667
+anchor_top = -0.014814815
+anchor_right = -0.0020833334
+anchor_bottom = -0.05185185
+offset_left = 88.0
+offset_top = 16.0
+offset_right = 404.0
+offset_bottom = 65.0
+pivot_offset = Vector2(72, 24)
+theme_override_fonts/font = ExtResource("2_sa0lm")
+theme_override_font_sizes/font_size = 32
+text = "Configurações de Volume"
+horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Options" type="Node" parent="." unique_id=678793390]
+
+[node name="VContainer" type="VBoxContainer" parent="Options" unique_id=1177525169]
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -100.0
+offset_top = 74.0
+offset_right = 84.0
+offset_bottom = -36.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 40
+
+[node name="volume_slider" parent="Options/VContainer" unique_id=1050084370 instance=ExtResource("3_bp7p1")]
+layout_mode = 2
+theme_override_constants/grabber_offset = 0
+value = 0.0
+bus_name = "Master"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="Options/VContainer/volume_slider" unique_id=1546773487]
+layout_mode = 0
+offset_top = -15.0
+offset_right = 63.0
+offset_bottom = 8.0
+theme_override_fonts/font = ExtResource("4_vq3wj")
+theme_override_font_sizes/font_size = 12
+text = "Volume"
+
+[node name="valueVolume" type="Label" parent="Options/VContainer/volume_slider" unique_id=1275555422]
+layout_mode = 0
+offset_left = 193.0
+offset_top = -4.0
+offset_right = 233.0
+offset_bottom = 12.0
+theme_override_fonts/font = ExtResource("4_vq3wj")
+theme_override_font_sizes/font_size = 12
+text = "0.0%"
+script = ExtResource("7_k8sn8")
+
+[node name="Sprite2D" type="Sprite2D" parent="Options/VContainer/volume_slider" unique_id=738202887]
+position = Vector2(-15, 0)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("5_2t4wd")
+
+[node name="music_slider" parent="Options/VContainer" unique_id=302280531 instance=ExtResource("3_bp7p1")]
+layout_mode = 2
+theme_override_constants/grabber_offset = 0
+bus_name = "Music"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="Options/VContainer/music_slider" unique_id=70215321]
+layout_mode = 0
+offset_top = -14.0
+offset_right = 63.0
+offset_bottom = 9.0
+theme_override_fonts/font = ExtResource("4_vq3wj")
+theme_override_font_sizes/font_size = 12
+text = "Música"
+
+[node name="valueMusic" type="Label" parent="Options/VContainer/music_slider" unique_id=1699647418]
+layout_mode = 0
+offset_left = 193.0
+offset_top = -4.0
+offset_right = 233.0
+offset_bottom = 12.0
+theme_override_fonts/font = ExtResource("4_vq3wj")
+theme_override_font_sizes/font_size = 12
+text = "0.0%"
+script = ExtResource("10_vechk")
+
+[node name="Sprite2D" type="Sprite2D" parent="Options/VContainer/music_slider" unique_id=319767956]
+position = Vector2(-15, 0)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("6_k8sn8")
+
+[node name="sfx_slider" parent="Options/VContainer" unique_id=365052139 instance=ExtResource("3_bp7p1")]
+layout_mode = 2
+theme_override_constants/grabber_offset = 0
+bus_name = "sfx"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="Options/VContainer/sfx_slider" unique_id=1904687893]
+layout_mode = 0
+offset_top = -13.0
+offset_right = 63.0
+offset_bottom = 10.0
+theme_override_fonts/font = ExtResource("4_vq3wj")
+theme_override_font_sizes/font_size = 12
+text = "Ambiente"
+
+[node name="valueSFX" type="Label" parent="Options/VContainer/sfx_slider" unique_id=1698967497]
+layout_mode = 0
+offset_left = 193.0
+offset_top = -4.0
+offset_right = 233.0
+offset_bottom = 12.0
+theme_override_fonts/font = ExtResource("4_vq3wj")
+theme_override_font_sizes/font_size = 12
+text = "0.0%"
+script = ExtResource("12_kxd3r")
+
+[node name="Sprite2D" type="Sprite2D" parent="Options/VContainer/sfx_slider" unique_id=725032545]
+position = Vector2(-15, 0)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("7_vechk")
+
+[node name="ldt_slider" parent="Options/VContainer" unique_id=1929455966 instance=ExtResource("3_bp7p1")]
+layout_mode = 2
+theme_override_constants/grabber_offset = 0
+bus_name = "ldt"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="Options/VContainer/ldt_slider" unique_id=723850059]
+layout_mode = 0
+offset_top = -13.0
+offset_right = 63.0
+offset_bottom = 10.0
+theme_override_fonts/font = ExtResource("4_vq3wj")
+theme_override_font_sizes/font_size = 12
+text = "Leitor de Tela"
+
+[node name="valueLDT" type="Label" parent="Options/VContainer/ldt_slider" unique_id=1079405448]
+layout_mode = 0
+offset_left = 193.0
+offset_top = -4.0
+offset_right = 233.0
+offset_bottom = 12.0
+theme_override_fonts/font = ExtResource("4_vq3wj")
+theme_override_font_sizes/font_size = 12
+text = "0.0%"
+script = ExtResource("11_vechk")
+
+[node name="Sprite2D" type="Sprite2D" parent="Options/VContainer/ldt_slider" unique_id=1554590497]
+position = Vector2(-15, 0)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("12_4ymb1")
+
+[node name="BackToMenuButton" parent="Options" unique_id=464511439 node_paths=PackedStringArray("transition") instance=ExtResource("10_xooxd")]
+offset_left = 446.0
+offset_top = 14.0
+offset_right = 471.0
+offset_bottom = 39.0
+grow_horizontal = 0
+pivot_offset = Vector2(13, 13)
+theme_override_constants/icon_max_width = 23
+theme_override_icons/icon = ExtResource("4_sa0lm")
+icon = ExtResource("4_sa0lm")
+transition = NodePath("../../Input_transition_acessibility")
+scene_to_change_path = "uid://blnaweio5sp0r"
+
+[node name="Input_transition_acessibility" type="AnimatedSprite2D" parent="." unique_id=1499372645]
+visible = false
+z_index = 1
+position = Vector2(239.99722, 134.99672)
+rotation = 1.5707964
+scale = Vector2(0.70309424, 2.2221239)
+sprite_frames = SubResource("SpriteFrames_eji0e")
+metadata/_edit_lock_ = true
+
+[node name="Input_transition" type="AnimatedSprite2D" parent="." unique_id=1842848767]
+visible = false
+z_index = 1
+position = Vector2(239.99722, 134.99672)
+rotation = 1.5707964
+scale = Vector2(0.70309424, 2.2221239)
+sprite_frames = SubResource("SpriteFrames_eji0e")
+metadata/_edit_lock_ = true
+
+[node name="Background" type="Sprite2D" parent="." unique_id=763705770]
+position = Vector2(240.00002, 135)
+scale = Vector2(1, 0.99999994)
+texture = ExtResource("9_4ymb1")
+metadata/_edit_lock_ = true
+
+[node name="ALTO_CONTRASTE" parent="." unique_id=907147133 instance=ExtResource("12_bp7p1")]
+visible = false
+position = Vector2(228, 138)
+
+[node name="FPSLabel" type="Label" parent="." unique_id=148505055]
+visible = false
+offset_right = 15.0
+offset_bottom = 12.0
+theme_override_fonts/font = ExtResource("4_vq3wj")
+theme_override_font_sizes/font_size = 9
+text = "123 FPS"
+script = ExtResource("18_4ymb1")
+
+[connection signal="mouse_entered" from="Options/VContainer/volume_slider" to="." method="_on_volume_slider_mouse_entered"]
+[connection signal="value_changed" from="Options/VContainer/volume_slider" to="." method="_on_volume_slider_value_changed"]
+[connection signal="value_changed" from="Options/VContainer/volume_slider" to="Options/VContainer/volume_slider/valueVolume" method="_on_volume_slider_value_changed"]
+[connection signal="mouse_entered" from="Options/VContainer/music_slider" to="." method="_on_music_slider_mouse_entered"]
+[connection signal="value_changed" from="Options/VContainer/music_slider" to="." method="_on_music_slider_value_changed"]
+[connection signal="value_changed" from="Options/VContainer/music_slider" to="Options/VContainer/music_slider/valueMusic" method="_on_music_slider_value_changed"]
+[connection signal="mouse_entered" from="Options/VContainer/sfx_slider" to="." method="_on_sfx_slider_mouse_entered"]
+[connection signal="value_changed" from="Options/VContainer/sfx_slider" to="." method="_on_sfx_slider_value_changed"]
+[connection signal="value_changed" from="Options/VContainer/sfx_slider" to="Options/VContainer/sfx_slider/valueSFX" method="_on_sfx_slider_value_changed"]
+[connection signal="mouse_entered" from="Options/VContainer/ldt_slider" to="." method="_on_ldt_slider_mouse_entered"]
+[connection signal="value_changed" from="Options/VContainer/ldt_slider" to="." method="_on_ldt_slider_value_changed"]
+[connection signal="value_changed" from="Options/VContainer/ldt_slider" to="Options/VContainer/ldt_slider/valueLDT" method="_on_ldt_slider_value_changed"]
+[connection signal="mouse_entered" from="Options/BackToMenuButton" to="." method="_on_back_to_menu_button_mouse_entered"]

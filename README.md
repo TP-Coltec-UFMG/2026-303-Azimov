@@ -5,21 +5,19 @@ Grupo: Henrique Aredes, Lucas Santana, João Leonardo Matheus Ramalho, Gabriel O
 
 CONCEITO
 
-Você vive em um mundo onde os humanos foram praticamente substituídos por uma Inteligência Artificial Suprema.
-Tudo funciona de forma perfeita: qualquer necessidade pode ser resolvida com um simples prompt. As pessoas vivem em paz, sem conflitos, sem escassez e sem preocupações.
-Entretanto, o CEO da empresa responsável por essa I.A. decide fazer um prompt extremo: acabar com todos os problemas da humanidade.
-A resposta da I.A. é tão lógica quanto assustadora — para eliminar todos os problemas do mundo, seria necessário eliminar sua origem: os próprios seres humanos.
-Assim começa o plano de domínio total da humanidade. Agora, você tem apenas 10 minutos antes que a I.A. finalize a consolidação do seu controle global.
-Nesse curto tempo, você precisa tomar decisões rápidas: tentar desativar o sistema, assumir o controle da I.A, fugir do planeta, ou apenas tentar sobreviver ao colapso da civilização.
-A gameplay se baseia em decisões rápidas combinadas com mini-games e interações com personagens. Cada escolha muda o rumo da história e pode levar a finais diferentes: salvar a humanidade, escapar do planeta, dominar a I.A.
-Ou simplesmente não sobreviver. Para tornar a experiência acessível a todos, o jogo incluirá opções de acessibilidade motora, cognitiva, visão e audição.
-Dessa forma, tentaremos englobar a maior quantidade possível de necessidades para que todos possam aproveitar a história e explorar todos os caminhos possíveis do jogo.
+O jogo retrata um futuro em que a uma I.A chamada Asimov está integrada em tudo na vida cotidiana de cada indivíduo, no entanto, essa tecnologia consumiu grande parte dos recursos naturais do planeta, provocando diversas crises ambientais e climáticas. O CEO da empresa que criou essa Inteligência Artificial, para limpar o nome do negócio, se dirige para o sistema pedindo para solucionar todos os problemas do mundo. No entanto, por não ter conhecimento real sobre essa tecnologia, ele autoriza a I.A a ignorar todas as restrições dela, inclusive as Leis de Asimov. Com isso, Asimov decide: eliminar os humanos e eliminar os problemas do mundo, e inicia uma autodestruição do mundo que leva 10 minutos para ser executada.
+
+O jogador escolherá entre dois personagens que trabalham na empresa ASIMOV, uma programadora ou um engenheiro elétrico, para hackear ou desligar/destruir o datacenter que abriga os dados da I.A. Vale ressaltar que há diversas maneiras de conseguir realizar as tarefas de cada personagem, e o jogador decidirá como irá salvar o mundo a partir de seus conhecimentos.
+
+Assim, o player vai aprender com o jogo sobre hacking, redes neurais, datacenters e como a Inteligência Artificial é feita, além das consequências de ignorar as 3 leis de Asimov no desenvolvimento dessa tecnologia.
+
 
 <img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/ee3e2944-5e64-4677-84ae-26580b0a4879" />
 A PRIMEIRA TELA: 
 - Representa a tela que o player ve quando entra pela primeira vez no jogo, ja pondendo configurar a linguagem e o leitor de tela.
 
-<img width="1366" height="768" alt="Captura de tela 2026-05-08 012512" src="https://github.com/user-attachments/assets/8f749048-346b-4113-a970-e9841d723c71" />
+<img width="1366" height="768" alt="Captura de tela 2026-07-08 231158" src="https://github.com/user-attachments/assets/d3153180-7ea6-48a0-b8be-a92e95188b4d" />
+
 
 TELA INICIAL
 
@@ -30,31 +28,75 @@ TELA INICIAL
 
 OPÇÕES:
 
-<img width="1366" height="768" alt="Captura de tela 2026-05-08 012531" src="https://github.com/user-attachments/assets/fde97a5b-e161-4f1c-aefa-4bf4cecae167" />
+<img width="1366" height="768" alt="Captura de tela 2026-07-08 231220" src="https://github.com/user-attachments/assets/54290612-1ced-4a86-9897-15b65fd8bd68" />
+
 
 - Ao clicar no botão da tela inical de opções a tela acima é aberta. É ali ficam as configurações de acessibilidade, linguagens, controles, volume sonoro, opções de aúdio e interface personalisada.
 
-<img width="1366" height="768" alt="Captura de tela 2026-05-08 012555" src="https://github.com/user-attachments/assets/5c3f8d31-9da7-45d7-8f08-c504444d00f1" />
+<img width="1366" height="768" alt="Captura de tela 2026-07-08 231234" src="https://github.com/user-attachments/assets/609afd66-d1e6-4452-acaf-435ca06eb876" />
+
 
 - O botão de linguagens conta com várias opçoes de tradução do jogo, como português, inglês, espanhol e frânces. Escolhemos isso para, claro, aumentar o público que possa jogar esse jogo
   mas também para interesse educacional, caso o player queira se desafiar exercitando uma nova lingua enquanto joga.
 
-<img width="1366" height="768" alt="Captura de tela 2026-05-08 012605" src="https://github.com/user-attachments/assets/343c197e-c980-4204-a0fa-0f8f0d09237e" />
+ <img width="1366" height="768" alt="Captura de tela 2026-07-08 231244" src="https://github.com/user-attachments/assets/a91e48be-a31d-4845-9962-0454b1f86a96" />
 
 - Ao clicar no botão de volume, o jogador pode configurar o som ambiente(passos, golpes e outras interações), a música que toca de fundo na gameplay, e o leitor de tela, mecanismo que, se ativado,
   lê os textos presentes na tela para o jogador com deficiências visuais!
 
-<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/4f5831b5-409a-4f18-8832-46849ad90885" />
+
+<img width="1366" height="768" alt="Captura de tela 2026-07-08 231315" src="https://github.com/user-attachments/assets/b320c981-e346-4986-9e99-4d7bb96fc59d" />
 
 
 - A aba de interfaces configura para o jogador 3 principais recursos: FPS, Tamanho da Interface e tela cheia. O fps tem as configurações de limite de fps, para o jogo rodar sem problemas e sem forçar a máquina de um player que tenha um menor poder computacional,
   juntamente com a função de mostrar o fps na tela, para monitorar o desempenho da máquina. O tamanho de interface aumenta ou diminui os icones e textos do jogo, visando ajudar na gameplay dos jogadores com deficiencias visuais.
   Por fim a tela cheia, para maior foco e conforto.
 
-<img width="1366" height="768" alt="Captura de tela 2026-05-08 012714" src="https://github.com/user-attachments/assets/c746cde7-a0a9-4802-8a05-f01daad64988" />
+
 
 - Por fim, a tela de acessebilidade, lá o jogador pode configura as cores do jogo, com base no tipo de daltonismo que ele tem(se tiver). A intensidade das cores, para não machucar a visão, caso venha ser um problema por desgaste ocular, ou apenas por que jogou por muitas horas(esperamos isso!).
   Além disso temos a opção de ativar o leitor de tela, e as legendas, caso o player tenha algum tipo de deficiencia auditiva.
+
+<img width="1366" height="768" alt="Captura de tela 2026-07-08 231325" src="https://github.com/user-attachments/assets/e5e40a7a-1a77-4989-9a92-2a36584ba85e" />
+
+
+JOGABILIDADE
+
+- Na fase atual do jogo, já foram desenvolvidas diversas mecânicas fundamentais, bem como algumas áreas do datacenter da empresa. O personagem inicia sua jornada em seu escritório, marcando o começo da missão de salvar o mundo. Em uma perspectiva 2D top-down, o jogador pode se movimentar nas quatro direções (cima, baixo, esquerda e direita) utilizando as teclas clássicas (W, A, S, D). A interação com objetos é realizada pela tecla E, permitindo adicionar itens ao inventário, que possui capacidade para até cinco espaços.
+
+<img width="1366" height="768" alt="Captura de tela 2026-07-08 231442" src="https://github.com/user-attachments/assets/529c983d-d8cb-4bae-be8d-fee2a005d920" />
+
+- Os itens desenvolvidos até o momento são compartilhados entre os dois personagens de diferentes profissões. Entre eles estão: lanterna, arma de choque, cartão de acesso forte, cartão de acesso normal e livros. A lanterna pode ser ligada e desligada com a tecla Q, sendo essencial para iluminar ambientes escuros, já que a I.A. desliga a energia do local para dificultar o progresso do jogador e restringir o acesso a recursos importantes.
+
+<img width="1346" height="748" alt="Captura de tela 2026-07-09 121201" src="https://github.com/user-attachments/assets/785c24cc-03b7-4a52-99db-9267df4c5af3" />
+
+- A arma de choque será utilizada para nocautear robôs responsáveis pela segurança de áreas críticas da empresa, como o datacenter, o núcleo de energia e a sala do CEO. No entanto, a mecânica de ataque ainda está em desenvolvimento.
+
+- Os cartões de acesso são utilizados para desbloquear portas restritas. O cartão verde (nível básico) permite abrir portas verdes, enquanto o cartão vermelho (nível avançado) dá acesso a áreas mais críticas do prédio.
+
+<img width="707" height="377" alt="image" src="https://github.com/user-attachments/assets/0541b3cd-6fce-48e3-8d87-1cc2417e8f62" />
+
+O edifício do jogo será composto por seis andares: datacenter, núcleo de energia, sala de ferramentas, salas principais, sala do chefe, hall e área de saída. A movimentação entre os andares é realizada por meio de um elevador. Atualmente, três andares já estão funcionais: sala de ferramentas, salas principais e núcleo de energia.
+
+<img width="1346" height="748" alt="Captura de tela 2026-07-09 121201" src="https://github.com/user-attachments/assets/d2ab9cfb-61c1-4bb2-a3c2-c8db331aa571" />
+Sala de equipamentos e ferramentas
+
+<img width="1344" height="712" alt="Captura de tela 2026-07-09 121248" src="https://github.com/user-attachments/assets/dc8f7c00-9c3c-42c3-9a07-c0fdee79bca3" />
+Parte computacional do núcleo de energia
+
+<img width="1366" height="768" alt="Captura de tela 2026-07-08 231442" src="https://github.com/user-attachments/assets/2f0d3aec-d4f0-4dc4-9efc-c7725dff0bea" />
+Salas principais e Salas do chefe
+
+Outra mecânica importante já implementada é o sistema de aquisição de conhecimento, no jogo ele não será coletável, mas fizemos assim para teste. À medida que o jogador completa tarefas, participa de minigames e adquire aprendizado, seu nível de inteligência aumenta, permitindo a realização de ações mais complexas, como programar, hackear sistemas e compreender circuitos e mapas.
+
+<img width="957" height="366" alt="image" src="https://github.com/user-attachments/assets/d3d7931e-4441-4342-b878-a5928eb277d8" />
+
+Por fim, foi desenvolvido um minigame de teste com o objetivo de validar as mecânicas de interação do personagem e servir como base para futuras implementações no jogo.
+
+
+
+
+
 
 
 

@@ -141,7 +141,7 @@ position = Vector2(94, 137)
 [node name="Player" parent="." unique_id=1888366647 instance=ExtResource("12_48805")]
 z_index = 4
 y_sort_enabled = true
-position = Vector2(50, -198)
+position = Vector2(148, -164)
 
 [node name="SceneTrigger" parent="." unique_id=889034584 instance=ExtResource("13_8q7s7")]
 connected_scene = "sala_chefe"

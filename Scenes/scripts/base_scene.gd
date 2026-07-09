@@ -30,7 +30,14 @@ func position_player() -> void:
 	if last_scene.is_empty():
 		last_scene = "any"
 
+	# Primeiro tenta achar o Marker2D com o nome exato da última cena
 	for entrance in entrance_markers.get_children():
-		if entrance is Marker2D and (entrance.name == "any" or entrance.name == last_scene):
+		if entrance is Marker2D and entrance.name == last_scene:
+			player.global_position = entrance.global_position
+			return
+
+	# Se não achou o nome específico, usa o "any"
+	for entrance in entrance_markers.get_children():
+		if entrance is Marker2D and entrance.name == "any":
 			player.global_position = entrance.global_position
 			return

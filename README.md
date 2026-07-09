@@ -11,8 +11,8 @@ O jogador escolherá entre dois personagens que trabalham na empresa ASIMOV, uma
 
 Assim, o player vai aprender com o jogo sobre hacking, redes neurais, datacenters e como a Inteligência Artificial é feita, além das consequências de ignorar as 3 leis de Asimov no desenvolvimento dessa tecnologia.
 
+<img width="1359" height="729" alt="Captura de tela 2026-07-09 130446" src="https://github.com/user-attachments/assets/4bdec378-8067-410f-bf4c-956167c1950d" />
 
-<img width="1359" height="729" alt="image" src="https://github.com/user-attachments/assets/986eeda7-f1f7-4c35-bca1-f4b76abe48a1" />
 
 A PRIMEIRA TELA: 
 - Representa a tela que o player ve quando entra pela primeira vez no jogo, ja pondendo configurar a linguagem e o leitor de tela.

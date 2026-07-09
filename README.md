@@ -1,7 +1,7 @@
-GAME DESIGN CANVAS
+
 Grupo: Henrique Aredes, Lucas Santana, João Leonardo Matheus Ramalho, Gabriel Oliveira, Gabriel Fernandes
 
- Nome do jogo: Aura Code
+ Nome do jogo: Asimov
 
 CONCEITO
 
